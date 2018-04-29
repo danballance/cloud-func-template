@@ -1,0 +1,47 @@
+{
+  "name": "Google Cloud Function Typescript Template",
+  "version": "0.1.0",
+  "description": "A template for quickly bootstrapping a Nodejs Google Cloud Function in TypeScript with linting and Jest support for testing.",
+  "private": true,
+  "keywords": [],
+  "author": "Dan Ballance",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "babili-webpack-plugin": "^0.1.2",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.4",
+    "ts-loader": "^4.2.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@types/express": "^4.11.1"
+  },
+  "scripts": {
+    "build": "webpack -p",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
+    "pretest": "yarn lint",
+    "test": "jest"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  }
+}
