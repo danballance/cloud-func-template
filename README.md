@@ -10,6 +10,7 @@
 * echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 * sudo apt-get update
 * sudo apt-get install yarn
+* yarn install
 * yarn build
 
 
@@ -24,3 +25,5 @@
 * yarn global add @google-cloud/functions-emulator
 * functions start|stop  # on some shells you may need to use the alias binary functions-emulator
 
+# Deploy to Google
+* gcloud beta functions deploy entryPointFunctionName --trigger-http
