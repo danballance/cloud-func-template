@@ -18,7 +18,6 @@ module.exports = {
     plugins: [
         new BabiliPlugin()
     ],
-    devtool: 'source-map',
     module: {
         rules: [
             {
