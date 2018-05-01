@@ -1,5 +1,5 @@
 {
-  "name": "Google Cloud Function Typescript Template",
+  "name": "your-package-name-here",
   "version": "0.1.0",
   "description": "A template for quickly bootstrapping a Nodejs Google Cloud Function in TypeScript with linting and Jest support for testing.",
   "private": true,
