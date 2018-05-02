@@ -18,8 +18,8 @@
 
 # Run the local emulator
 * yarn emulator start
-* yarn emulator deploy entryPointFunctionName --local-path=./ --trigger-http 
+* yarn emulator deploy $entryPointFunctionName --local-path=./ --trigger-http --project $projectId 
 * yarn emulator stop
 
 # Deploy to Google
-* gcloud beta functions deploy entryPointFunctionName --trigger-http
+* gcloud beta functions deploy $entryPointFunctionName --trigger-http --project $projectId
